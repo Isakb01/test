@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv" style="display:flex;width:100%">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocket köp & sälj bilar, möbler</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blocket köp & sälj bilar, möbler</h1>
+        <button onclick="kategorier()">Kategorier</button>
+    </header>
+
+    <nav>
+        <a href="#">Lägg in annons</a>
+    </nav>
+	<nav>
+		<a href="#1">Annonser</a>
+	</nav>
+	<nav>
+		<a href="#">Meddelanden</a>
+	</nav>
+	<nav>
+		<a href="#">Bevakningar</a>
+	</nav>
+	<nav>
+		<a href="#">Logga in</a>
+	</nav>
+
+
+    <main>
+        <h4>Välkommen till Blocket</h4>
+		<h4>Början på något stort</h4>
+
+        <section>
+            <h3>Sök</h3>
+            <input type="text" id="searchInput" placeholder="Vad vill du söka efter?
+			">
+            <button onclick="search()">Sök</button>
+        </section>
+
+        <section>
+            <h3>Välj plats</h3>
+            <select id="location">
+                <option value="stockholm">Stockholm</option>
+                <option value="gothenburg">Göteborg</option>
+                <option value="malmo">Malmö</option>
+            </select>
+            <button onclick="chooseLocation()">Välj plats</button>
+        </section>
+
+        <button onclick="search()" class="search-button">Sök</button>
+
+        <div><a href="#">Vad väntar du på?</a></div>
+		<div><a href="#">Hitta ditt nya jobb bland tusentals annonser på Blocket Jobb</a></div>
+
+        <h2>Upptäck våra kategorier</h2>
+
+        <div><a href="#1">Alla kategorier</a></div>
+		<div><a href="#1">Jobb</a></div>
+		<div><a href="#1">Jobb</a></div>
+        <div> <a href="#1">Fordon</a></div>
+        <div><a href="#1">För hemmet</a></div>
+        <div><a href="#1">Bostad</a></div>
+        <div><a href="#1">Personligt</a></div>
+        <div><a href="#1">Elektronik</a></div>
+        <div><a href="#1">Fritid och hobby</a></div>
+        <div><a href="#1">Affärsverksamhet</a></div>
+        <div><a href="#1">Övrigt</a></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Blocket</p>
+    </footer>
+
+    <script>
+        function kategorier() {
+        }
+
+        function search() {
+            const query = document.getElementById('searchInput').value;
+            console.log(`Searching for '${query}'`);
+        }
+
+        function chooseLocation() {
+            const location = document.getElementById('location').value;
+            console.log(`Selected location: ${location}`);
+        }
+    </script>
+</body>
+</html>
